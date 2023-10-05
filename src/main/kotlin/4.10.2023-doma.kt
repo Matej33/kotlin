@@ -1,3 +1,7 @@
+import kotlin.random.Random
+import java.text.DecimalFormat
+
+
 fun border() {
     val w: Int = readln().toInt();
     val h: Int = readln().toInt();
@@ -64,6 +68,46 @@ fun biggerChess() {
 
 }
 
+fun numbers() {
+    for (i in 1..<11) {
+        for (j in 1..<11) {
+            if (i * j < 10) {
+                print("   ${i * j}")
+            } else if (i * j < 100) {
+                print("  ${i * j}")
+            } else {
+                print(" ${i * j}")
+            }
+        }
+        println()
+    }
+}
+
+fun rand() {
+    val from = readln().toInt();
+    val to = readln().toInt();
+    val rand1 = Random.nextDouble(from.toDouble(), to.toDouble());
+    val rand2 = Random.nextInt(from, to);
+    val rand3 = DecimalFormat("#.##").format(rand1)
+
+    println(rand3);
+    println(rand2);
+}
+
+fun piApproximation() {
+    for (i in 1..<1000) {
+        for (j in 1..<1000) {
+            val x = i.toDouble() / j
+            if (x > Math.PI - 0.00001 && x < Math.PI + 0.00001)
+                println("$i $j")
+        }
+    }
+}
+
+fun pictureBorder(){
+
+}
+
 fun main() {
-    biggerChess();
+    pictureBorder()
 }
