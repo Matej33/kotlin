@@ -130,31 +130,104 @@ fun identificationNumber() {
     println("$day.$month.$year - $gender")
 }
 
-fun isbn(){
+fun isbn() {
     val number = readln()
     var counter = 0
-    if(number.length != 13){
+    if (number.length != 13) {
         println("invalid")
         return
     }
-    for(i in 0 ..< 13){
-        if(i % 2 != 0) {
-            counter += number[i].digitToInt()*3
+    for (i in 0..<13) {
+        if (i % 2 != 0) {
+            counter += number[i].digitToInt() * 3
         } else {
             counter += number[i].digitToInt()
         }
     }
-    if(counter % 10 == 0){
+    if (counter % 10 == 0) {
         println("valid")
     } else {
         println("invalid")
     }
 }
 
-fun buttonPhone(){
+fun buttonPhone() {
+    val input = readln()
+    var counter = 1
 
+    for (i in 0 ..< input.length) {
+            if (input[i] == '0') {
+                print(" ")
+            } else if(i == input.length-1 && input[i] == input[i-1]){
+                when (input[i]) {
+                    '2' -> print((96 + counter).toChar())
+                    '3' -> print((99 + counter).toChar())
+                    '4' -> print((102 + counter).toChar())
+                    '5' -> print((105 + counter).toChar())
+                    '6' -> print((108 + counter).toChar())
+                    '7' -> print((111 + counter).toChar())
+                    '8' -> print((115 + counter).toChar())
+                    '9' -> print((118 + counter).toChar())
+                }
+            } else if (input[i] == input[i + 1]) {
+                counter++
+            } else {
+                when (input[i]) {
+                    '2' -> print((96 + counter).toChar())
+                    '3' -> print((99 + counter).toChar())
+                    '4' -> print((102 + counter).toChar())
+                    '5' -> print((105 + counter).toChar())
+                    '6' -> print((108 + counter).toChar())
+                    '7' -> print((111 + counter).toChar())
+                    '8' -> print((115 + counter).toChar())
+                    '9' -> print((118 + counter).toChar())
+                }
+                counter = 1
+            }
+    }
+}
+
+fun horse(){
+    val x = readln().toInt()
+    val y = readln().toInt()
+    var counter = 0
+    if(x + 1 <= 8 && y + 2 <= 8){
+        println("x: ${x+1} y: ${y+2}")
+        counter++
+    }
+    if(x + 2 <= 8 && y + 1 <= 8){
+        println("x: ${x+2} y:${y+1}")
+        counter++
+    }
+    if(x + 1 <= 8 && y - 2 > 0){
+        println("x: ${x+1} y:${y-2}")
+        counter++
+    }
+    if(x + 2 <= 8 && y - 1 > 0){
+        println("x: ${x+2} y:${y-1}")
+        counter++
+    }
+    if(x - 2 > 0 && y + 1 <= 8){
+        println("x: ${x-2} y:${y+1}")
+        counter++
+    }
+    if(x - 2 > 0 && y - 1 > 0){
+        println("x: ${x-2} y:${y-1}")
+        counter++
+    }
+    if(x - 1 > 0 && y + 2 <= 8){
+        println("x: ${x-1} y:${y+2}")
+        counter++
+    }
+    if(x - 1 > 0 && y - 2 > 0){
+        println("x: ${x-1} y:${y-2}")
+        counter++
+    }
+    if(counter == 0){
+        println("Error")
+    }
 }
 
 fun main() {
-    isbn()
+    horse()
 }
