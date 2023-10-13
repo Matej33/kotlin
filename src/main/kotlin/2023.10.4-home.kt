@@ -1,7 +1,6 @@
 import kotlin.random.Random
 import java.text.DecimalFormat
 
-
 fun border() {
     val w: Int = readln().toInt();
     val h: Int = readln().toInt();
@@ -105,9 +104,23 @@ fun piApproximation() {
 }
 
 fun pictureBorder() {
+    val x = readln().toInt()
+    val y = readln().toInt()
 
+    print("#".repeat(y + 4))
+    println()
+    print("#".repeat(y + 4))
+    println()
+    for (i in 0..<x) {
+        val input = readln()
+        println("##$input##")
+    }
+    print("#".repeat(y + 4))
+    println()
+    print("#".repeat(y + 4))
 }
 
+
 fun main() {
-    pictureBorder()
+//()
 }
