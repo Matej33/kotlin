@@ -1,3 +1,4 @@
+/*
 fun powers() {
     val n = readln().toInt();
     for (i in 0..<n) {
@@ -231,3 +232,4 @@ fun horse(){
 fun main() {
 buttonPhone()
 }
+ */

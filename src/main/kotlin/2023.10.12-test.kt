@@ -1,3 +1,4 @@
+/*
 fun uloha1() {
     val n = readln().toInt()
     var counter = 0
@@ -72,3 +73,4 @@ fun main() {
 //    uloha2()
 //    uloha3() //nefunguje
 }
+*/

@@ -26,7 +26,7 @@ class AfrickySlon() : Slon() {
         grow()
     }
 }
-*/
+
 
 class Card(
     val number: String,
@@ -49,3 +49,4 @@ fun main() {
     println(a.getBalance(1588))
     println(a.getBalance(2588))
 }
+*/

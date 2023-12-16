@@ -1,3 +1,4 @@
+/*
 fun main(){
 
     val white_pieces = "♖♘♗♔♕♗♘♖"
@@ -17,7 +18,7 @@ fun main(){
     println(white_pieces)
 
 }
-
+*/
 
 
 

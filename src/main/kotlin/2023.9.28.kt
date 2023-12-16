@@ -1,3 +1,4 @@
+/*
 import kotlin.math.sqrt
 
 fun hello(input: String) : String {
@@ -49,4 +50,4 @@ fun main() {
 
 
 }
-
+*/

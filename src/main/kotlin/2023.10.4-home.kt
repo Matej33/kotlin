@@ -1,3 +1,4 @@
+/*
 import kotlin.random.Random
 import java.text.DecimalFormat
 
@@ -124,3 +125,4 @@ fun pictureBorder() {
 fun main() {
 //()
 }
+*/
