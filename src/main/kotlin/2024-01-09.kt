@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/*
-=======
->>>>>>> af83667768ba8a69c9d68fd44772fae88ab81e90
 import java.io.*
 import java.util.*
 
@@ -50,7 +46,4 @@ private fun playGame() {
         player = (player + 1) % 2
     }
 }
-<<<<<<< HEAD
-*/
-=======
->>>>>>> af83667768ba8a69c9d68fd44772fae88ab81e90
+
