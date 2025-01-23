@@ -9,13 +9,19 @@ enum class radio(val url: String) {
 abstract class Sorting {
     abstract fun sort(array: IntArray): IntArray
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> af83667768ba8a69c9d68fd44772fae88ab81e90
 class SystemSort(array: IntArray) : Sorting() {
     override fun sort(array: IntArray): IntArray {
         return array.sortedArray()
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> af83667768ba8a69c9d68fd44772fae88ab81e90
 class BubbleSort(array: IntArray) : Sorting() {
     override fun sort(array: IntArray): IntArray {
         val n = array.size
@@ -65,6 +71,10 @@ fun main() {
      */
 
     //druha uloha
+<<<<<<< HEAD
+=======
+
+>>>>>>> af83667768ba8a69c9d68fd44772fae88ab81e90
     val array = IntArray(10)
     println("daj 10 cisel:")
     for (i in 0 until 10) {
